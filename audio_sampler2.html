@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Audio Sampler</title>
+	<link rel="stylesheet" href="audio.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="wrapper">
+	<div class="container">
+
+		<audio id="player1" src="audio/bobbybrown.mp3"></audio> 
+		<audio id="player2" src="audio/earthwindfire.mp3"></audio> 
+		<audio id="player3" src="audio/hotchip.mp3"></audio> 
+		<audio id="player4" src="audio/lionelrichie.mp3"></audio>
+		<audio id="player5" src="audio/nirvana.mp3"></audio>
+		<audio id="player6" src="audio/pinkfloyd.mp3"></audio>
+		<audio id="player7" src="audio/prince.mp3"></audio>
+		<audio id="player8" src="audio/queen.mp3"></audio>
+		<audio id="player9" src="audio/rickjames.mp3"></audio>
+		
+		<div class="audiobutton flip-container" ontouchstart="this.classList.toggle('hover');">
+			<div class="flipper">
+				<div class="front">
+					<div class="albumfront"><img class="albumimage" src="covers/bobbybrown.jpg"></div>
+				</div>
+				<div class="back">
+
+					<div class="albumback">
+						<h3 class="songtitle">Song name.mp3</h3>
+						<i class="buttonplay fa-5x fa fa-play" aria-hidden="true" id="play1"></i>
+						<br>
+						<progress id="seekbar1" value="0" max="1" style="width:150px; margin-top: 20px;"></progress>
+					</div>
+					
+
+				</div>
+			</div>
+		</div>
+		<div class="audiobutton flip-container" ontouchstart="this.classList.toggle('hover');" id="play2">
+			<div class="flipper">
+				<div class="front"
+				><div class="albumfront"><img class="albumimage" src="covers/earthwindfire.jpg"></div>
+				</div>
+				<div class="back">
+					<div class="albumback">
+						<h3 class="songtitle">Song name.mp3</h3>
+						<i class="buttonplay fa-5x fa fa-play" aria-hidden="true" id="play2"></i>
+						<br>
+						<progress id="seekbar2" value="0" max="1" style="width:150px; margin-top: 20px;"></progress>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="audiobutton flip-container" ontouchstart="this.classList.toggle('hover');" id="play3">
+			<div class="flipper">
+				<div class="front">
+					<div class="albumfront"><img class="albumimage" src="covers/hotchip.png"></div>
+				</div>
+				<div class="back">
+					<div class="albumback">
+						<h3 class="songtitle">Song name.mp3</h3>
+						<i class="buttonplay fa-5x fa fa-play" aria-hidden="true" id="play3"></i>
+						<br>
+						<progress id="seekbar3" value="0" max="1" style="width:150px; margin-top: 20px;"></progress>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="audiobutton flip-container" ontouchstart="this.classList.toggle('hover');" id="play4">
+			<div class="flipper">
+				<div class="front">
+					<div class="albumfront"><img class="albumimage" src="covers/lionelrichie.jpg"></div>
+				</div>
+				<div class="back">
+					<div class="albumback">
+						<h3 class="songtitle">Song name.mp3</h3>
+						<i class="buttonplay fa-5x fa fa-play" aria-hidden="true" id="play4"></i>
+						<br>
+						<progress id="seekbar4" value="0" max="1" style="width:150px; margin-top: 20px;"></progress>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="audiobutton flip-container" ontouchstart="this.classList.toggle('hover');" id="play5">
+			<div class="flipper">
+				<div class="front">
+					<div class="albumfront"><img class="albumimage" src="covers/nirvana.jpg"></div>
+				</div>
+				<div class="back">
+					<div class="albumback">
+						<h3 class="songtitle">Song name.mp3</h3>
+						<i class="buttonplay fa-5x fa fa-play" aria-hidden="true" id="play5"></i>
+						<br>
+						<progress id="seekbar5" value="0" max="1" style="width:150px; margin-top: 20px;"></progress>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="audiobutton flip-container" ontouchstart="this.classList.toggle('hover');" id="play6">
+			<div class="flipper">
+				<div class="front">
+					<div class="albumfront"><img class="albumimage" src="covers/pinkfloyd.png"></div>
+				</div>
+				<div class="back">
+					<div class="albumback">
+						<h3 class="songtitle">Song name.mp3</h3>
+						<i class="buttonplay fa-5x fa fa-play" aria-hidden="true" id="play6"></i>
+						<br>
+						<progress id="seekbar6" value="0" max="1" style="width:150px; margin-top: 20px;"></progress>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="audiobutton flip-container" ontouchstart="this.classList.toggle('hover');" id="play7">
+			<div class="flipper">
+				<div class="front">
+					<div class="albumfront"><img class="albumimage" src="covers/prince.jpg"></div>
+				</div>
+				<div class="back">
+					<div class="albumback">
+						<h3 class="songtitle">Song name.mp3</h3>
+						<i class="buttonplay fa-5x fa fa-play" aria-hidden="true" id="play7"></i>
+						<br>
+						<progress id="seekbar7" value="0" max="1" style="width:150px; margin-top: 20px;"></progress>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="audiobutton flip-container" ontouchstart="this.classList.toggle('hover');" id="play8">
+			<div class="flipper">
+				<div class="front">
+					<div class="albumfront"><img class="albumimage" src="covers/queen2.jpg"></div>
+				</div>
+				<div class="back">
+					<div class="albumback">
+						<h3 class="songtitle">Song name.mp3</h3>
+						<i class="buttonplay fa-5x fa fa-play" aria-hidden="true" id="play8"></i>
+						<br>
+						<progress id="seekbar8" value="0" max="1" style="width:150px; margin-top: 20px;"></progress>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="audiobutton flip-container" ontouchstart="this.classList.toggle('hover');" id="play9">
+			<div class="flipper">
+				<div class="front">
+					<div class="albumfront"><img class="albumimage" src="covers/rickjames.jpg"></div>
+				</div>
+				<div class="back">
+					<div class="albumback">
+						<h3 class="songtitle">Song name.mp3</h3>
+						<i class="buttonplay fa-5x fa fa-play" aria-hidden="true" id="play9"></i>
+						<br>
+						<progress id="seekbar9" value="0" max="1" style="width:150px; margin-top: 20px;"></progress>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script>
+
+	// init();
+
+	// 	var createAudio = function(){
+
+	// 		window.newAudio = new Audio();
+	// 		newAudio.src = 'sounds/b.wav';
+
+	// 		window.newAudio2 = new Audio();
+	// 		newAudio2.src = 'sounds/b.wav';
+
+	// 		window.newAudio3 = new Audio();
+	// 		newAudio3.src = 'sounds/c.wav';
+
+	// 	}();
+
+
+		// function init(){
+
+		// 	var playButton = document.getElementById('play1');
+		// 	playButton.addEventListener('click', playAudio, false);
+
+		// 	var playButton2 = document.getElementById('play2');
+		// 	playButton2.addEventListener('click', playAudio2, false);
+
+		// 	var playButton3 = document.getElementById('play3');
+		// 	playButton3.addEventListener('click', playAudio3, false);
+
+		// 	// var pauseButton = document.getElementById('pause');
+		// 	// pauseButton.addEventListener('click', pauseAudio, false);
+
+		// }
+
+		// function playAudio(){
+		// 	if (newAudio.paused){
+		// 		newAudio.play()
+		// 	} else {
+		// 		newAudio.pause()
+		// 	}
+		// }
+
+		// function playAudio2(){
+		// 	if (newAudio2.paused){
+		// 		newAudio2.play()
+		// 	} else {
+		// 		newAudio2.pause()
+		// 	}
+		// }
+
+		
+		
+	$('.buttonplay').click(function(){
+
+		$(this).toggleClass('fa-play fa-pause');
+
+	})
+
+
+function song1Function(){
+	var getP1 = document.getElementById("player1");	
+	$('#play1').on('click', function() {
+		if (getP1.paused){
+			getP1.play()
+		} else {
+			getP1.pause()
+		}
+	});
+	$('#player1').on('timeupdate', function() {
+		$('#seekbar1').attr("value", this.currentTime / this.duration);
+	});
+};
+song1Function();
+
+function song2Function(){
+	var getP2 = document.getElementById("player2");	
+	$('#play2').on('click', function() {
+		if (getP2.paused){
+			getP2.play()
+		} else {
+			getP2.pause()
+		}
+	});
+	$('#player2').on('timeupdate', function() {
+		$('#seekbar2').attr("value", this.currentTime / this.duration);
+	});
+};
+song2Function();
+
+function song3Function(){
+	var getP3 = document.getElementById("player3");	
+	$('#play3').on('click', function() {
+		if (getP3.paused){
+			getP3.play()
+		} else {
+			getP3.pause()
+		}
+	});
+	$('#player3').on('timeupdate', function() {
+		$('#seekbar3').attr("value", this.currentTime / this.duration);
+	});
+};
+song3Function();
+
+function song4Function(){
+	var getP4 = document.getElementById("player4");	
+	$('#play4').on('click', function() {
+		if (getP4.paused){
+			getP4.play()
+		} else {
+			getP4.pause()
+		}
+	});
+	$('#player4').on('timeupdate', function() {
+		$('#seekbar4').attr("value", this.currentTime / this.duration);
+	});
+};
+song4Function();
+
+function song5Function(){
+	var getP5 = document.getElementById("player5");	
+	$('#play5').on('click', function() {
+		if (getP5.paused){
+			getP5.play()
+		} else {
+			getP5.pause()
+		}
+	});
+	$('#player5').on('timeupdate', function() {
+		$('#seekbar5').attr("value", this.currentTime / this.duration);
+	});
+};
+song5Function();
+
+function song6Function(){
+	var getP6 = document.getElementById("player6");	
+	$('#play6').on('click', function() {
+		if (getP6.paused){
+			getP6.play()
+		} else {
+			getP6.pause()
+		}
+	});
+	$('#player6').on('timeupdate', function() {
+		$('#seekbar6').attr("value", this.currentTime / this.duration);
+	});
+};
+song6Function();
+
+function song7Function(){
+	var getP7 = document.getElementById("player7");	
+	$('#play7').on('click', function() {
+		if (getP7.paused){
+			getP7.play()
+		} else {
+			getP7.pause()
+		}
+	});
+	$('#player7').on('timeupdate', function() {
+		$('#seekbar7').attr("value", this.currentTime / this.duration);
+	});
+};
+song7Function();
+
+function song8Function(){
+	var getP8 = document.getElementById("player8");	
+	$('#play8').on('click', function() {
+		if (getP8.paused){
+			getP8.play()
+		} else {
+			getP8.pause()
+		}
+	});
+	$('#player8').on('timeupdate', function() {
+		$('#seekbar8').attr("value", this.currentTime / this.duration);
+	});
+};
+song8Function();
+
+function song9Function(){
+	var getP9 = document.getElementById("player9");	
+	$('#play9').on('click', function() {
+		if (getP9.paused){
+			getP9.play()
+		} else {
+			getP9.pause()
+		}
+	});
+	$('#player9').on('timeupdate', function() {
+		$('#seekbar9').attr("value", this.currentTime / this.duration);
+	});
+};
+song9Function();
+
+
+	  
+
+	</script>
+</body>
+</html>

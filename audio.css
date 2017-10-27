@@ -1,0 +1,110 @@
+body{
+	margin: 0;
+	background-color: #333333;
+}
+
+.wrapper{
+	width: 100%;
+	background-color: #333333;
+	margin: auto;
+	text-align: center;
+	display: inline-block;
+}
+
+.container{
+	width: 680px;
+	display: inline-block;
+	padding: 20px;
+	margin: auto;
+	margin-top: 80px;
+	/*GRID*/
+	display: grid;
+	grid-template-columns: 200px 200px 200px;
+	grid-template-rows: 200px 200px 200px;
+	grid-gap: 40px;
+}
+
+.audiobutton{
+	cursor: pointer;
+	/*background-color: darkred;*/
+	width: 100%;
+	height: 100%;
+	transition-duration: 1s;
+}
+
+/*.audiobutton:hover{
+	transition-duration: 1s;
+	background-color: orange;
+	border-radius: 45px;
+}*/
+
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000px;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 100%;
+	height: 100%;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+}
+
+
+.albumfront{
+	background-color: red;
+	height: 200px;
+}
+
+.albumback{
+	background-color: #D6EBC5;
+	height: 200px;
+}
+
+.albumimage{
+	width: 100%;
+	height: 100%;
+}
+
+.buttonplay{
+	margin-top: 35px;
+	border-radius: 90px;
+	background-color: #D6EBC5;
+}
+
+.songtitle{
+	padding-top: 10px;
+	font-family: sans-serif;
+	margin: 0;
+}
